@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SENSHOP</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-house"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    <i class="fas fa-box"></i>
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-cart-shopping"></i>
+                    Cart
+                </a>
+            </li>
+
+            <li>
+                <a href="checkout.html">
+                    <i class="fas fa-credit-card"></i>
+                    Checkout
+                </a>
+            </li>
+
+            <li>
+                <a href="receipt.html">
+                    <i class="fas fa-receipt"></i>
+                    Receipt
+                </a>
+            </li>
+
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-box-open"></i>
+                    My Orders
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html">
+                    <i class="fas fa-heart"></i>
+                    Wishlist
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    My Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="notification.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="help.html">
+                    <i class="fas fa-circle-question"></i>
+                    Help
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-circle-info"></i>
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <h1>My Profile</h1>
+
+        <div class="profile-card">
+
+            <div class="profile-image">
+
+                <img
+                src="../images/default-user.png"
+                id="profilePicture"
+                alt="Profile">
+
+                <input
+                type="file"
+                id="imageUpload"
+                accept="image/*">
+
+            </div>
+
+            <div class="profile-form">
+
+                <label>Full Name</label>
+
+                <input
+                type="text"
+                id="fullName"
+                placeholder="Enter Full Name">
+
+                <label>Email Address</label>
+
+                <input
+                type="email"
+                id="email"
+                placeholder="Enter Email">
+
+                <label>Phone Number</label>
+
+                <input
+                type="tel"
+                id="phone"
+                placeholder="Enter Phone Number">
+
+                <label>Username</label>
+
+                <input
+                type="text"
+                id="username"
+                placeholder="Username">
+
+                <label>Current Password</label>
+
+                <input
+                type="password"
+                id="currentPassword">
+
+                <label>New Password</label>
+
+                <input
+                type="password"
+                id="newPassword">
+
+                <label>Confirm Password</label>
+
+                <input
+                type="password"
+                id="confirmPassword">
+
+                <button id="saveProfile">
+
+                    <i class="fas fa-floppy-disk"></i>
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

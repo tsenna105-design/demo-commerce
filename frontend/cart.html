@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="cart.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>SENSHOP</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+
+                <a href="home.html">
+
+                    <i class="fas fa-house"></i>
+                     Home
+                    
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="products.html">
+
+                    <i class="fas fa-box"></i>
+
+                    Products
+
+                </a>
+
+            </li>
+
+            <li class="active">
+
+                <a href="#">
+
+                    <i class="fas fa-cart-shopping"></i>
+
+                    Cart
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="checkout.html">
+
+                    <i class="fas fa-credit-card"></i>
+
+                    Checkout
+
+                </a>
+
+            <li>
+
+                <a href="login.html">
+
+                    <i class="fas fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= Main Content ================= -->
+
+    <main class="main-content">
+
+        <!-- Top Navigation -->
+
+        <header class="topbar">
+
+            <h1>Shopping Cart</h1>
+
+            <div class="cart-icon">
+
+                <i class="fas fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </div>
+
+        </header>
+
+        <!-- Cart Table -->
+
+        <section class="cart-section">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Product</th>
+
+                        <th>Price</th>
+
+                        <th>Quantity</th>
+
+                        <th>Total</th>
+
+                        <th>Remove</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="cartBody">
+
+                    <!-- Products will be inserted here using JavaScript -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Cart Summary -->
+
+        <section class="summary">
+
+            <div class="summary-card">
+
+                <h2>Cart Summary</h2>
+
+                <hr>
+
+                <p>
+
+                    Subtotal
+
+                    <span id="subtotal">
+
+                        KSh 0
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    VAT (16%)
+
+                    <span id="vat">
+
+                        KSh 0
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    Discount
+
+                    <span id="discount">
+
+                        KSh 0
+
+                    </span>
+
+                </p>
+
+                <hr>
+
+                <h3>
+
+                    Grand Total
+
+                    <span id="grandTotal">
+
+                        KSh 0
+
+                    </span>
+
+                </h3>
+
+                <div class="buttons">
+
+                    <button id="continueShopping">
+
+                        <i class="fas fa-arrow-left"></i>
+                         <a href="products.html">
+                       Continue Shopping
+                         </a>
+
+                    </button>
+
+                    <button id="checkout">
+
+                        <i class="fas fa-credit-card"></i>
+
+                        <a href="checkout.html">
+
+                            Checkout
+
+                        </a>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+
+</html>

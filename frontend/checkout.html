@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="checkout.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>SENSHOP</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    <i class="fas fa-box"></i>
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-cart-shopping"></i>
+                    Cart
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-credit-card"></i>
+                    Checkout
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout-container">
+
+            <!-- Customer Information -->
+
+            <div class="customer-details">
+
+                <h2>Customer Information</h2>
+
+                <form>
+
+                    <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Customer Name">
+
+                    <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="Email Address">
+
+                    <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Phone Number">
+
+                </form>
+
+            </div>
+
+            <!-- Order Summary -->
+
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="orderItems">
+
+                    <!-- JavaScript Loads Products Here -->
+
+                </div>
+
+                <hr>
+
+                <p>
+
+                    Subtotal
+
+                    <span id="subtotal">
+
+                        KSh 0
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    VAT (16%)
+
+                    <span id="vat">
+
+                        KSh 0
+
+                    </span>
+
+                </p>
+
+                <h2>
+
+                    Total
+
+                    <span id="total">
+
+                        KSh 0
+
+                    </span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+        <!-- Payment -->
+
+        <div class="payment">
+
+            <h2>Payment Method</h2>
+
+            <select id="paymentMethod">
+
+                <option value="">Select Payment</option>
+
+                <option>Cash</option>
+
+                <option>Card</option>
+
+                <option>M-Pesa</option>
+
+            </select>
+
+            <button id="completeOrder">
+
+                Complete Order
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+
+</html>

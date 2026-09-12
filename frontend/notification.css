@@ -1,0 +1,282 @@
+/* ======================================
+   GLOBAL STYLES
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ======================================
+   SIDEBAR
+====================================== */
+
+.sidebar{
+    width:250px;
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+}
+
+.logo{
+    background:#0f172a;
+    text-align:center;
+    padding:25px;
+}
+
+.logo h2{
+    color:white;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:white;
+    padding:18px 25px;
+    transition:.3s;
+}
+
+.sidebar ul li:hover{
+    background:royalblue;
+}
+
+.sidebar ul li.active{
+    background:royalblue;
+}
+
+/* ======================================
+   MAIN CONTENT
+====================================== */
+
+.main-content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:35px;
+}
+
+.main-content h1{
+    color:#333;
+    margin-bottom:30px;
+}
+
+/* ======================================
+   ACTION BUTTONS
+====================================== */
+
+.notification-actions{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.notification-actions button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    color:white;
+    transition:.3s;
+}
+
+#markAllRead{
+    background:#28a745;
+}
+
+#markAllRead:hover{
+    background:#1e7e34;
+}
+
+#clearNotifications{
+    background:#dc3545;
+}
+
+#clearNotifications:hover{
+    background:#b02a37;
+}
+
+/* ======================================
+   NOTIFICATION LIST
+====================================== */
+
+#notificationList{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* ======================================
+   NOTIFICATION CARD
+====================================== */
+
+.notification-card{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.notification-card:hover{
+    transform:translateY(-4px);
+}
+
+/* ======================================
+   UNREAD NOTIFICATION
+====================================== */
+
+.notification-card.unread{
+    border-left:6px solid royalblue;
+}
+
+/* ======================================
+   ICON
+====================================== */
+
+.icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    color:white;
+}
+
+.success{
+    background:#28a745;
+}
+
+.warning{
+    background:#ffc107;
+    color:#333;
+}
+
+.error{
+    background:#dc3545;
+}
+
+.info{
+    background:royalblue;
+}
+
+/* ======================================
+   CONTENT
+====================================== */
+
+.content{
+    flex:1;
+}
+
+.content h3{
+    color:#333;
+    margin-bottom:8px;
+}
+
+.content p{
+    color:#666;
+    margin-bottom:10px;
+    line-height:1.5;
+}
+
+.content small{
+    color:#999;
+}
+
+/* ======================================
+   EMPTY STATE
+====================================== */
+
+.empty-message{
+    text-align:center;
+    background:white;
+    padding:50px;
+    border-radius:12px;
+    color:#666;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.empty-message i{
+    font-size:60px;
+    color:#bbb;
+    margin-bottom:20px;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media(max-width:992px){
+
+.sidebar{
+    width:220px;
+}
+
+.main-content{
+    margin-left:220px;
+    width:calc(100% - 220px);
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.main-content{
+    margin-left:0;
+    width:100%;
+    padding:20px;
+}
+
+.notification-actions{
+    flex-direction:column;
+}
+
+.notification-actions button{
+    width:100%;
+}
+
+.notification-card{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+}

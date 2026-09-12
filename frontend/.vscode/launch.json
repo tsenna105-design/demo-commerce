@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Launch SENSHOP",
+            "url": "http://localhost:5500/login.html",
+            "webRoot": "${workspaceFolder}/frontend"
+        }
+    ]
+}

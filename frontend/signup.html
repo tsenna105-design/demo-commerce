@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SENSHOP - Sign Up</title>
+
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="signup-box">
+
+        <h1>Create Account</h1>
+
+        <form id="signupForm">
+
+            <!-- First Name -->
+            <div class="input-group">
+
+                <label for="first_name">First Name</label>
+
+                <input
+                    type="text"
+                    id="first_name"
+                    placeholder="Enter First Name"
+                    required>
+
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-group">
+
+                <label for="last_name">Last Name</label>
+
+                <input
+                    type="text"
+                    id="last_name"
+                    placeholder="Enter Last Name"
+                    required>
+
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email"
+                    required>
+
+            </div>
+
+            <!-- Phone -->
+            <div class="input-group">
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+2547XXXXXXXX"
+                    required>
+
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+
+                <label for="password">Password</label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create Password"
+                        required>
+
+                    <span class="toggle-password" id="togglePassword">
+                        👁
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="input-group">
+
+                <label for="confirmPassword">Confirm Password</label>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+
+                    <span class="toggle-password" id="toggleConfirmPassword">
+                        👁
+                    </span>
+
+                </div>
+
+            </div>
+
+            <button type="submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <p class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </p>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="signup.js"></script>
+
+</body>
+
+</html>

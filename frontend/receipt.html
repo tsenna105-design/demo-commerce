@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENSHOP - Order Confirmation</title>
+    <link rel="stylesheet" href="receipt.css">
+</head>
+
+<body>
+
+    <div class="receipt-container">
+
+        <div class="success-icon">✓</div>
+
+        <h1>Order Confirmed!</h1>
+
+        <p class="success-message">
+            Thank you for shopping with SENSHOP.
+        </p>
+
+        <div class="receipt-card">
+
+            <div class="receipt-header">
+                <h2>SENSHOP</h2>
+                <p>Order Receipt</p>
+            </div>
+
+            <div class="order-info">
+                <div>
+                    <span>Order Number</span>
+                    <strong id="orderNumber">Loading...</strong>
+                </div>
+
+                <div>
+                    <span>Order Date</span>
+                    <strong id="orderDate">Loading...</strong>
+                </div>
+
+                <div>
+                    <span>Payment Method</span>
+                    <strong id="paymentMethod">Loading...</strong>
+                </div>
+
+                <div>
+                    <span>Payment Status</span>
+                    <strong id="paymentStatus">Loading...</strong>
+                </div>
+            </div>
+
+            <div class="items-section">
+
+                <h3>Order Items</h3>
+
+                <div id="receiptItems"></div>
+
+            </div>
+
+            <div class="totals">
+
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="subtotal">KSh 0.00</strong>
+                </div>
+
+                <div>
+                    <span>Shipping</span>
+                    <strong id="shipping">KSh 0.00</strong>
+                </div>
+
+                <div>
+                    <span>VAT</span>
+                    <strong id="vat">KSh 0.00</strong>
+                </div>
+
+                <div class="grand-total">
+                    <span>Total</span>
+                    <strong id="grandTotal">KSh 0.00</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="receipt-actions">
+
+            <button id="printBtn">
+                Print Receipt
+            </button>
+
+            <button id="ordersBtn">
+                View My Orders
+            </button>
+
+            <button id="homeBtn">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="receipt.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - SENSHOP</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>SENSHOP</h2>
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html" class="active">My Orders</a>
+        </nav>
+
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="page-header">
+            <div>
+                <h1>My Orders</h1>
+                <p>View your previous orders and their current status.</p>
+            </div>
+        </header>
+
+        <section class="orders-section">
+
+            <div id="loading" class="message">
+                Loading your orders...
+            </div>
+
+            <div id="errorMessage" class="message error-message"></div>
+
+            <div id="emptyOrders" class="empty-orders">
+                <h2>No Orders Yet</h2>
+                <p>You haven't placed any orders yet.</p>
+                <a href="products.html">Start Shopping</a>
+            </div>
+
+            <div id="ordersContainer" class="orders-container"></div>
+
+        </section>
+
+    </main>
+
+    <script src="orders.js"></script>
+</body>
+</html>
+```

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details</title>
+
+    <link rel="stylesheet"
+          href="product-details.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>POS SYSTEM</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-house"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="products.html">
+                    <i class="fas fa-box"></i>
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html">
+                    <i class="fas fa-heart"></i>
+                    Wishlist
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-cart-shopping"></i>
+                    Cart
+                </a>
+            </li>
+
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-box-open"></i>
+                    My Orders
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="help.html">
+                    <i class="fas fa-circle-question"></i>
+                    Help
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-circle-info"></i>
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="product-container">
+
+            <!-- Product Images -->
+
+            <div class="product-images">
+
+                <img
+                src="../images/default-product.png"
+                id="mainImage"
+                class="main-image"
+                alt="Product">
+
+                <div class="thumbnail-gallery">
+
+                    <img src="../images/default-product.png"
+                         class="thumb active">
+
+                    <img src="../images/default-product.png"
+                         class="thumb">
+
+                    <img src="../images/default-product.png"
+                         class="thumb">
+
+                    <img src="../images/default-product.png"
+                         class="thumb">
+
+                </div>
+
+            </div>
+
+            <!-- Product Information -->
+
+            <div class="product-info">
+
+                <h1 id="productName">
+
+                    Product Name
+
+                </h1>
+
+                <div class="rating">
+
+                    ⭐⭐⭐⭐⭐
+
+                    <span>(4.8 / 5)</span>
+
+                </div>
+
+                <h2 id="productPrice">
+
+                    KSh 2,500
+
+                </h2>
+
+                <p id="productDescription">
+
+                    Product description appears here.
+
+                </p>
+
+                <div class="stock">
+
+                    <strong>Status:</strong>
+
+                    <span class="in-stock">
+
+                        In Stock
+
+                    </span>
+
+                </div>
+
+                <div class="quantity">
+
+                    <button id="minus">
+
+                        -
+
+                    </button>
+
+                    <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    min="1">
+
+                    <button id="plus">
+
+                        +
+
+                    </button>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button id="addCart">
+
+                        <i class="fas fa-cart-plus"></i>
+
+                        Add To Cart
+
+                    </button>
+
+                    <button id="addWishlist">
+
+                        <i class="fas fa-heart"></i>
+
+                        Wishlist
+
+                    </button>
+
+                    <button id="buyNow">
+
+                        <i class="fas fa-bolt"></i>
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Specifications -->
+
+        <section class="specifications">
+
+            <h2>Specifications</h2>
+
+            <table>
+
+                <tr>
+
+                    <td>Brand</td>
+
+                    <td>POS Brand</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Category</td>
+
+                    <td>Electronics</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Availability</td>
+
+                    <td>In Stock</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Warranty</td>
+
+                    <td>12 Months</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Reviews -->
+
+        <section class="reviews">
+
+            <h2>Customer Reviews</h2>
+
+            <div class="review">
+
+                <h3>⭐⭐⭐⭐⭐ John</h3>
+
+                <p>
+
+                    Amazing product.
+                    Highly recommended.
+
+                </p>
+
+            </div>
+
+            <div class="review">
+
+                <h3>⭐⭐⭐⭐ Mary</h3>
+
+                <p>
+
+                    Great quality and fast delivery.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="product-details.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+/* ===================================
+   GLOBAL STYLES
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===================================
+   SIDEBAR
+=================================== */
+
+.sidebar{
+    width:250px;
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+}
+
+.logo{
+    text-align:center;
+    padding:25px;
+    background:#0f172a;
+}
+
+.logo h2{
+    color:white;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+    text-decoration:none;
+    padding:18px 25px;
+    transition:.3s;
+}
+
+.sidebar ul li:hover{
+    background:royalblue;
+}
+
+.sidebar ul li.active{
+    background:royalblue;
+}
+
+/* ===================================
+   MAIN CONTENT
+=================================== */
+
+.main-content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:35px;
+}
+
+.main-content h1{
+    margin-bottom:30px;
+    color:#333;
+}
+
+/* ===================================
+   PROFILE CARD
+=================================== */
+
+.profile-card{
+    display:flex;
+    gap:40px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* ===================================
+   PROFILE IMAGE
+=================================== */
+
+.profile-image{
+    width:280px;
+    text-align:center;
+}
+
+.profile-image img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid royalblue;
+    margin-bottom:20px;
+}
+
+.profile-image input{
+    width:100%;
+    padding:10px;
+}
+
+/* ===================================
+   PROFILE FORM
+=================================== */
+
+.profile-form{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.profile-form label{
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#444;
+}
+
+.profile-form input{
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+.profile-form input:focus{
+    border-color:royalblue;
+    box-shadow:0 0 8px rgba(65,105,225,.25);
+}
+
+/* ===================================
+   SAVE BUTTON
+=================================== */
+
+#saveProfile{
+    margin-top:30px;
+    padding:15px;
+    background:royalblue;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#saveProfile:hover{
+    background:#003cb3;
+}
+
+#saveProfile i{
+    margin-right:10px;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+@media(max-width:992px){
+
+.profile-card{
+    flex-direction:column;
+    align-items:center;
+}
+
+.profile-image{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.container{
+    flex-direction:column;
+}
+
+.main-content{
+    margin-left:0;
+    width:100%;
+    padding:20px;
+}
+
+.profile-card{
+    padding:20px;
+}
+
+.profile-image img{
+    width:150px;
+    height:150px;
+}
+
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wishlist</title>
+
+    <link rel="stylesheet" href="wishlist.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>SENSHOP</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="home.html">
+                    <i class="fas fa-house"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    <i class="fas fa-box"></i>
+                    Products
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                    Wishlist
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="fas fa-cart-shopping"></i>
+                    Cart
+                </a>
+            </li>
+
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-box-open"></i>
+                    My Orders
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="notification.html">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="help.html">
+                    <i class="fas fa-circle-question"></i>
+                    Help
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-circle-info"></i>
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <h1>My Wishlist</h1>
+
+        <div class="search-bar">
+
+            <input
+                type="text"
+                id="searchWishlist"
+                placeholder="Search Wishlist...">
+
+        </div>
+
+        <div class="wishlist-grid" id="wishlistGrid">
+
+            <!-- Product Card -->
+
+            <div class="wishlist-card">
+
+                <img
+                src="../images/default-product.png"
+                alt="Product">
+
+                <h3>Product Name</h3>
+
+                <p>KSh 500.00</p>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+
+                        <i class="fas fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+                    <button class="remove-btn">
+
+                        <i class="fas fa-trash"></i>
+
+                        Remove
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="wishlist.js"></script>
+
+</body>
+
+</html>

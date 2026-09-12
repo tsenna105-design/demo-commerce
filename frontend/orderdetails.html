@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - SENSHOP</title>
+    <link rel="stylesheet" href="orderdetails.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SENSHOP</h2>
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html" class="active">My Orders</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+
+        <button id="logoutBtn" class="logout-btn">
+            Logout
+        </button>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="top-bar">
+            <button id="backBtn" class="back-btn">
+                ← Back to Orders
+            </button>
+        </div>
+
+        <header class="page-header">
+            <h1>Order Details</h1>
+            <p id="orderNumber">Loading order...</p>
+        </header>
+        <section class="delivery-progress">
+
+    <h2>Order Progress</h2>
+
+    <div class="progress-track">
+
+        <div class="progress-line"></div>
+
+        <div class="progress-step" data-status="pending">
+            <div class="progress-circle">✓</div>
+            <span>Pending</span>
+        </div>
+
+        <div class="progress-step" data-status="processing">
+            <div class="progress-circle">✓</div>
+            <span>Processing</span>
+        </div>
+
+        <div class="progress-step" data-status="shipped">
+            <div class="progress-circle">✓</div>
+            <span>Shipped</span>
+        </div>
+
+        <div class="progress-step" data-status="delivered">
+            <div class="progress-circle">✓</div>
+            <span>Delivered</span>
+        </div>
+
+    </div>
+
+</section>
+
+        <div id="loading" class="message">
+            Loading order details...
+        </div>
+
+        <div id="errorMessage" class="message error-message"></div>
+
+        <section id="orderContent" class="order-content">
+
+            <div class="order-summary">
+
+                <div class="summary-card">
+                    <span>Order Date</span>
+                    <strong id="orderDate">-</strong>
+                </div>
+
+                <div class="summary-card">
+                    <span>Order Status</span>
+                    <strong id="orderStatus">-</strong>
+                </div>
+
+                <div class="summary-card">
+                    <span>Payment Method</span>
+                    <strong id="paymentMethod">-</strong>
+                </div>
+
+                <div class="summary-card">
+                    <span>Payment Status</span>
+                    <strong id="paymentStatus">-</strong>
+                </div>
+
+            </div>
+
+            <section class="products-section">
+
+                <h2>Products</h2>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="orderItems"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <section class="price-section">
+
+                <div class="price-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">KSh 0.00</strong>
+                </div>
+
+                <div class="price-row">
+                    <span>Shipping</span>
+                    <strong id="shipping">KSh 0.00</strong>
+                </div>
+
+                <div class="price-row total-row">
+                    <span>Total</span>
+                    <strong id="grandTotal">KSh 0.00</strong>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="orderdetails.js"></script>
+</body>
+</html>
+

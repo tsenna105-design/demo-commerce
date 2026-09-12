@@ -1,0 +1,424 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    width:250px;
+    background:#1e293b;
+    color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+}
+
+.logo{
+    text-align:center;
+    padding:25px;
+    background:#0f172a;
+}
+
+.logo h2{
+    color:white;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px 25px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.sidebar ul li:hover{
+    background:royalblue;
+}
+
+.sidebar ul li.active{
+    background:royalblue;
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+.main-content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:30px;
+}
+
+/* ==========================
+   TOPBAR
+========================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.topbar h1{
+    color:#333;
+}
+
+.cart-icon{
+    position:relative;
+    font-size:28px;
+    color:royalblue;
+}
+
+.cart-icon span{
+    position:absolute;
+    top:-10px;
+    right:-12px;
+    background:red;
+    color:white;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+}
+
+/* ==========================
+   CART TABLE
+========================== */
+
+.cart-section{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:royalblue;
+
+    color:white;
+
+}
+
+th{
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+tbody tr:hover{
+
+    background:#f8f8f8;
+
+}
+
+/* ==========================
+   QUANTITY BUTTONS
+========================== */
+
+.quantity{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.quantity button{
+
+    width:35px;
+
+    height:35px;
+
+    border:none;
+
+    background:royalblue;
+
+    color:white;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+.quantity button:hover{
+
+    background:#003cb3;
+
+}
+
+/* ==========================
+   REMOVE BUTTON
+========================== */
+
+.remove-btn{
+
+    background:red;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.remove-btn:hover{
+
+    background:darkred;
+
+}
+
+/* ==========================
+   SUMMARY CARD
+========================== */
+
+.summary{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:30px;
+
+}
+
+.summary-card{
+
+    width:350px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.summary-card h2{
+
+    margin-bottom:15px;
+
+}
+
+.summary-card hr{
+
+    margin:15px 0;
+
+}
+
+.summary-card p,
+.summary-card h3{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.buttons button{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+#continueShopping{
+
+    background:#6c757d;
+
+}
+
+#continueShopping:hover{
+
+    background:#495057;
+
+}
+
+#checkout{
+
+    background:royalblue;
+
+}
+
+#checkout:hover{
+
+    background:#003cb3;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:220px;
+
+}
+
+.main-content{
+
+    margin-left:220px;
+
+    width:calc(100% - 220px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+.topbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.summary{
+
+    justify-content:center;
+
+}
+
+.summary-card{
+
+    width:100%;
+
+}
+
+table{
+
+    min-width:700px;
+
+}
+
+}
